@@ -73,8 +73,9 @@ with tab2:
         st.write("- Avocats, huile d'olive\n- Noix, amandes\n- Graines de chia/lin/courge")
 
 # MUSCULATION
+# MUSCULATION
 with tab3:
-    st.subheader("🏋️ Planning Muscu Hebdomadaire")
+    st.subheader("📆 Planning Muscu Hebdomadaire")
 
     days = {
         "Lundi": "Haut du corps (Push): Développé couché, dips, élévations, triceps",
@@ -88,6 +89,58 @@ with tab3:
 
     for day, routine in days.items():
         st.write(f"**📅 {day}** — {routine}")
+
+    st.divider()
+    st.subheader("🔥 Circuits ciblés")
+
+    # Onglets pour circuits
+    circuit_tab1, circuit_tab2, circuit_tab3 = st.tabs(["🟧 Haut du corps", "🟦 Centre & Dos", "🟩 Jambes & Fessiers"])
+
+    with circuit_tab1:
+        st.markdown("### 🟧 Circuit 1 – Haut du corps : Trapèze / Épaules / Bras / Pecs")
+        st.write("""
+**Objectif** : prise de masse, posture, force du haut du corps
+
+| Exercice | Séries × Rép. | Zones |
+|----------|---------------|-------|
+| Développé militaire | 4 × 10 | Épaules, triceps |
+| Élévations latérales | 3 × 15 | Épaules externes |
+| Shrugs | 4 × 12 | Trapèzes |
+| Curl biceps | 3 × 12 | Biceps |
+| Dips | 3 × 10–15 | Triceps, pecs |
+| Pompes déclinées | 3 × 12–15 | Pecs, épaules |
+        """)
+
+    with circuit_tab2:
+        st.markdown("### 🟦 Circuit 2 – Centre / Dos / Abdos")
+        st.write("""
+**Objectif** : gainage, renforcement postural, solidité dorsale
+
+| Exercice | Séries × Rép. | Zones |
+|----------|---------------|-------|
+| Rowing barre/haltères | 4 × 10 | Dos, trapèzes |
+| Superman | 3 × 20s | Lombaires |
+| Bird-dog | 3 × 12 / côté | Gainage, dos profond |
+| Gainage frontal | 3 × 45s | Core |
+| Crunch + relevés jambes | 3 × 15 | Abdos |
+| Face pull | 3 × 12 | Arrière épaules |
+        """)
+
+    with circuit_tab3:
+        st.markdown("### 🟩 Circuit 3 – Jambes / Mollets / Fessiers")
+        st.write("""
+**Objectif** : force, volume, explosivité
+
+| Exercice | Séries × Rép. | Zones |
+|----------|---------------|-------|
+| Squats | 4 × 12–15 | Quadriceps, fessiers |
+| Hip Thrust | 4 × 10 | Fessiers |
+| Fentes marchées | 3 × 12 / jambe | Jambes complètes |
+| Soulevé de terre jambes tendues | 3 × 12 | Ischios |
+| Pont fessier 1 jambe | 3 × 10 / jambe | Fessiers, gainage |
+| Mollets debout | 3 × 20 | Mollets |
+        """)
+
 
 # COMPLEMENTS
 with tab4:
@@ -115,3 +168,4 @@ with tab4:
 - **Photos mensuelles** : suivi visuel  
 - **Progression muscu** : + poids ou + reps chaque semaine
 """)
+
