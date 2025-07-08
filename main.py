@@ -102,7 +102,7 @@ with tab3:
 
     # Développé militaire avec image
     st.markdown("#### 🔸 Développé militaire — 4 × 10 — Épaules, triceps")
-    st.image("https://www.docteur-fitness.com/wp-content/uploads/2000/08/developpe-militaire-exercice-musculation.gif", caption="Exécution du développé militaire", use_column_width=True)
+    st.image("https://www.docteur-fitness.com/wp-content/uploads/2000/08/developpe-militaire-exercice-musculation.gif", caption="Exécution du développé militaire", use_container_width=True)
 
     # Autres exos en tableau
     st.markdown("""
