@@ -98,18 +98,22 @@ with tab3:
 
     with circuit_tab1:
         st.markdown("### 🟧 Circuit 1 – Haut du corps : Trapèze / Épaules / Bras / Pecs")
-        st.write("""
-**Objectif** : prise de masse, posture, force du haut du corps
+    st.write("**Objectif** : prise de masse, posture, force du haut du corps")
 
-| Exercice | Séries × Rép. | Zones |
-|----------|---------------|-------|
-| Développé militaire | 4 × 10 | Épaules, triceps |
-| Élévations latérales | 3 × 15 | Épaules externes |
-| Shrugs | 4 × 12 | Trapèzes |
-| Curl biceps | 3 × 12 | Biceps |
-| Dips | 3 × 10–15 | Triceps, pecs |
-| Pompes déclinées | 3 × 12–15 | Pecs, épaules |
-        """)
+    # Développé militaire avec image
+    st.markdown("#### 🔸 Développé militaire — 4 × 10 — Épaules, triceps")
+    st.image("https://www.docteur-fitness.com/wp-content/uploads/2000/08/developpe-militaire-exercice-musculation.gif", caption="Exécution du développé militaire", use_column_width=True)
+
+    # Autres exos en tableau
+    st.markdown("""
+    | Exercice | Séries × Rép. | Zones |
+    |----------|---------------|-------|
+    | Élévations latérales | 3 × 15 | Épaules externes |
+    | Shrugs | 4 × 12 | Trapèzes |
+    | Curl biceps | 3 × 12 | Biceps |
+    | Dips | 3 × 10–15 | Triceps, pecs |
+    | Pompes déclinées | 3 × 12–15 | Pecs, épaules |
+    """)
 
     with circuit_tab2:
         st.markdown("### 🟦 Circuit 2 – Centre / Dos / Abdos")
@@ -168,4 +172,5 @@ with tab4:
 - **Photos mensuelles** : suivi visuel  
 - **Progression muscu** : + poids ou + reps chaque semaine
 """)
+
 
