@@ -108,7 +108,7 @@ with tab3:
         width=300  # ✅ Ajuste ici (en pixels)
     )
 
-    st.markdown("#### 🔸 Développé militaire — 3 × 15 — Épaules externes")
+    st.markdown("#### 🔸 Élévations latérales — 3 × 15 — Épaules externes")
     st.image(
         "https://www.docteur-fitness.com/wp-content/uploads/2000/08/elevations-laterales-exercice-musculation.gif",
         caption="Élévations latérales",
