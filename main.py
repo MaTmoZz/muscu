@@ -115,6 +115,13 @@ with tab3:
         width=300  # ✅ Ajuste ici (en pixels)
     )
 
+    st.markdown("#### 🔸 Shrugs — 4 × 12 — Trapèzes")
+    st.image(
+        "https://cdn.shopify.com/s/files/1/0547/0486/5477/files/dumbbell-shrug_480x480.gif?v=1701426774",
+        caption="Shrugs",
+        width=300  # ✅ Ajuste ici (en pixels)
+    )
+
 
     # Autres exos en tableau
     st.markdown("""
