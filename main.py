@@ -129,14 +129,14 @@ with tab3:
         width=300  # ✅ Ajuste ici (en pixels)
     )
 
-    st.markdown("#### 🔸 Dips — 3 × 10-15 — triceps")
+    st.markdown("#### 🔸 Dips — 3 × 10-15 — Pecs, triceps")
     st.image(
         "https://www.docteur-fitness.com/wp-content/uploads/2000/01/dips-pectoraux.gif",
         caption="Dips",
         width=300  # ✅ Ajuste ici (en pixels)
     )
 
-    st.markdown("#### 🔸 Développé couché — 3 × 12-15 — Pecs, triceps")
+    st.markdown("#### 🔸 Développé couché — 3 × 12-15 — Pecs")
     st.image(
         "https://www.docteur-fitness.com/wp-content/uploads/2019/08/developpe-couche.gif",
         caption="Développé couché",
