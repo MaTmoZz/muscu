@@ -122,17 +122,26 @@ with tab3:
         width=300  # ✅ Ajuste ici (en pixels)
     )
 
+    st.markdown("#### 🔸 Curl bicepsgs — 3 × 12 — Biceps")
+    st.image(
+        "https://www.docteur-fitness.com/wp-content/uploads/2022/01/curl-au-pupitre-barre-ez-larry-scott.gif",
+        caption="Curl biceps",
+        width=300  # ✅ Ajuste ici (en pixels)
+    )
 
-    # Autres exos en tableau
-    st.markdown("""
-    | Exercice | Séries × Rép. | Zones |
-    |----------|---------------|-------|
-    | Élévations latérales | 3 × 15 | Épaules externes |
-    | Shrugs | 4 × 12 | Trapèzes |
-    | Curl biceps | 3 × 12 | Biceps |
-    | Dips | 3 × 10–15 | Triceps, pecs |
-    | Pompes déclinées | 3 × 12–15 | Pecs, épaules |
-    """)
+    st.markdown("#### 🔸 Dips — 3 × 10-15 — triceps")
+    st.image(
+        "https://www.docteur-fitness.com/wp-content/uploads/2000/01/dips-pectoraux.gif",
+        caption="Dips",
+        width=300  # ✅ Ajuste ici (en pixels)
+    )
+
+    st.markdown("#### 🔸 Développé couché — 3 × 12-15 — Pecs, triceps")
+    st.image(
+        "https://www.docteur-fitness.com/wp-content/uploads/2019/08/developpe-couche.gif",
+        caption="Développé couché",
+        width=300  # ✅ Ajuste ici (en pixels)
+    )
 
     with circuit_tab2:
         st.markdown("### 🟦 Circuit 2 – Centre / Dos / Abdos")
