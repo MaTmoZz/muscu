@@ -102,11 +102,10 @@ with tab3:
 
     # Développé militaire avec image
     st.markdown("#### 🔸 Développé militaire — 4 × 10 — Épaules, triceps")
-    st.image(
-    "https://www.docteur-fitness.com/wp-content/uploads/2000/08/developpe-militaire-exercice-musculation.gif",
-    caption="Exécution du développé militaire",
-    width=300  # ✅ Ajuste ici (en pixels)
-)
+    st.image("https://www.docteur-fitness.com/wp-content/uploads/2000/08/developpe-militaire-exercice-musculation.gif", caption="Exécution du développé militaire", use_column_width=True)
+
+    st.markdown("#### 🔸 Élévations latérales — 3 × 15 — Épaules externes")
+    st.image("https://www.docteur-fitness.com/wp-content/uploads/2000/08/elevations-laterales-exercice-musculation.gif", caption="Élévations latérales", use_column_width=True)
 
     # Autres exos en tableau
     st.markdown("""
@@ -176,5 +175,3 @@ with tab4:
 - **Photos mensuelles** : suivi visuel  
 - **Progression muscu** : + poids ou + reps chaque semaine
 """)
-
-
