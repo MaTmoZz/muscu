@@ -10,6 +10,7 @@ st.title("💪 Plan Nutrition & Musculation – Prise de masse (Végé/Végan)")
 
 # Onglets principaux
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["📊 Objectifs", "🍽️ Nutrition", "🏋️ Musculation", "💊 Compléments & Courses", "🎵 Musique"])
+tab1, tab2, tab3, tab4 = st.tabs(["📊 Objectifs", "🍽️ Nutrition", "🏋️ Musculation", "💊 Compléments & Courses"])
 
 # OBJECTIFS
 with tab1:
@@ -21,25 +22,17 @@ with tab1:
         st.subheader("👩‍🦰 Profil de ta copine")
         st.info("**Taille**: 1m70\n\n**Poids**: 68 kg\n\n**Objectif**: recomposition corporelle\n\n**Kcal/jour**: 2000–2200\n**Protéines**: 110–130 g")
 
-# ---------------------------------------------------------------------------
-# NUTRITION
-# ---------------------------------------------------------------------------
+
 with tab2:
     st.subheader("🍽️ Nutrition")
 
     # Sous‑onglets
     menu_tab, track_tab = st.tabs(["📖 Journées types", "📅 Suivi journalier"])
 
-    # -----------------------------------------------------------------------
-    # 1) Onglet Journées types  (garde ton contenu actuel ici)
-    # -----------------------------------------------------------------------
+
     with menu_tab:
         st.success("🧔‍♂️ Journée type (Toi)")
-        # … ton texte / markdown existant …
 
-    # -----------------------------------------------------------------------
-    # 2) Onglet Suivi journalier – cartes aliments + barres de progression
-    # -----------------------------------------------------------------------
     with track_tab:
         st.subheader("📅 Suivi journalier – Ajoute tes aliments")
 
@@ -136,6 +129,51 @@ with tab2:
 
 
 
+# NUTRITION
+with tab2:
+    st.subheader("🍽️ Exemples de journées types")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.success("🧔‍♂️ Journée type (Toi)")
+        st.markdown("""
+**Petit-déjeuner**  
+- Flocons d’avoine + lait végétal  
+- Banane + beurre d’amande  
+- 1 scoop de whey ou protéine végétale  
+- Graines de lin
+
+**Déjeuner**  
+- Quinoa + pois chiches + brocolis  
+- Tofu ou œuf dur  
+- 1 fruit
+
+**Collation**  
+- Barre ou shake protéiné  
+- Fruits + noix
+
+**Dîner**  
+- Pâtes lentilles + légumes + seitan  
+- Chocolat noir
+""")
+    with col2:
+        st.success("👩‍🦰 Journée type (Elle)")
+        st.markdown("""
+**Petit-déjeuner**  
+- Smoothie protéiné (lait soja, banane, flocons, graines, protéine)  
+- Tartine beurre de cacahuète
+
+**Déjeuner**  
+- Riz complet + tofu + légumes  
+- Yaourt végétal enrichi
+
+**Collation**  
+- Barre ou shake protéiné  
+- Fruits secs
+
+**Dîner**  
+- Patate douce + pois chiches + légumes rôtis  
+- Compote ou chocolat noir
+""")
 
     st.divider()
     st.subheader("🛒 Liste de courses")
@@ -145,6 +183,7 @@ with tab2:
         st.write("- Riz complet, patate douce, boulgour\n- Pâtes aux légumineuses\n- Fruits variés\n- Légumes verts")
     with st.expander("🥑 Bonnes graisses"):
         st.write("- Avocats, huile d'olive\n- Noix, amandes\n- Graines de chia/lin/courge")
+
 
 # MUSCULATION
 with tab3:
@@ -168,6 +207,7 @@ with tab3:
 
     # Onglets pour circuits
     circuit_tab1, circuit_tab2, circuit_tab3, circuit_tab4, circuit_tab5 = st.tabs(["🟧 Trapèze, Épaules & Bras", "🟦 Dos", "🟩 Jambes & Fessiers","🟪 Pectoraux","🟩 Abdos"])
+    circuit_tab1, circuit_tab2, circuit_tab3, circuit_tab4 = st.tabs(["🟧 Trapèze, Épaules & Bras", "🟦 Dos", "🟩 Jambes & Fessiers","🟪 Pectoraux"])
 
     with circuit_tab1:
         st.markdown("### 🟧 Circuit 1 – Haut du corps : Trapèze / Épaules / Bras")
@@ -430,6 +470,12 @@ with circuit_tab5:
 
 
 
+
+
+
+
+
+
 # COMPLEMENTS
 with tab4:
     st.subheader("💊 Suppléments recommandés")
@@ -442,6 +488,12 @@ with tab4:
 | Multivitamine | ​❌​ | ​❌​  | Complement au régime alimentaire |
 | Oméga-3 (algues) | ​❌​ | ​❌​ | Anti-inflammatoire |
 | BCAA | ​❌​ | ​❌​ | Synthétisation des protéines |
+| Protéine poudre | ✅ (whey ou végétale) | ✅ (végétale) | Apports protéiques |
+| Créatine | ✅ | ✅ | Performance & prise de muscle |
+| Vitamine B12 | ✅ | ✅ obligatoire | Système nerveux |
+| Vitamine D3 végan | ✅ | ✅ | Immunité, récupération |
+| Oméga-3 (algues) | Optionnel | Recommandé | Anti-inflammatoire |
+| Zinc / Fer | Optionnel | Si besoin | Immunité, énergie |
     """)
 
     st.success("✅ Pense à te supplémenter quotidiennement en B12, D3, et éventuellement Oméga-3 (algues).")
@@ -485,3 +537,4 @@ with tab5:  # 🎵 Musique
     st.markdown("#### ➕ Ajouter une musique")
     st.markdown("- Utilise [ytmp3.nu](https://ytmp3.nu/fr12/) ou tout convertisseur fiable pour télécharger le MP3.")
     st.markdown("- Place le fichier dans le dossier `/musique` de ton projet Streamlit.")
+
