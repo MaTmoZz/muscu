@@ -10,7 +10,7 @@ st.title("💪 Plan Nutrition & Musculation – Prise de masse (Végé/Végan)")
 
 # Onglets principaux
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["📊 Objectifs", "🍽️ Nutrition", "🏋️ Musculation", "💊 Compléments & Courses", "🎵 Musique"])
-tab1, tab2, tab3, tab4 = st.tabs(["📊 Objectifs", "🍽️ Nutrition", "🏋️ Musculation", "💊 Compléments & Courses"])
+
 
 # OBJECTIFS
 with tab1:
@@ -514,6 +514,15 @@ with tab4:
 
 
 
+
+
+
+
+
+
+
+
+
 with tab5:  # 🎵 Musique
     st.markdown("## 🎧 Playlist d'entraînement visuelle")
 
@@ -526,12 +535,12 @@ with tab5:  # 🎵 Musique
         st.audio("musique/Helldivers 2 Main Theme - A Cup Of Liber-Tea.mp3")
 
     with col2:
-        st.image("musique/helldiver-cover.jpg", caption="Helldivers 2 Main Theme - A Cup Of Liber-Tea", use_container_width=True)
-        st.audio("musique/Helldivers 2 Main Theme - A Cup Of Liber-Tea.mp3")
+        st.image("musique/ssbb.jpg", caption="Main Theme - Super Smash Bros Brawl", use_container_width=True)
+        st.audio("musique/Main Theme - Super Smash Bros Brawl.mp3")
 
     with col3:
-        st.image("musique/helldiver-cover.jpg", caption="Helldivers 2 Main Theme - A Cup Of Liber-Tea", use_container_width=True)
-        st.audio("musique/Helldivers 2 Main Theme - A Cup Of Liber-Tea.mp3")
+        st.image("musique/last.jpg", caption="The Last Stand", use_container_width=True)
+        st.audio("musique/The Last Stand.mp3")
 
 
     st.markdown("#### ➕ Ajouter une musique")
