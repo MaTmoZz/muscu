@@ -55,6 +55,9 @@ with tab2:
             "Pain blanc (50 g)": {"kcal": 135, "prot": 4, "gluc": 27, "lip": 0.7},
             "Tomate (1 moyenne - 120 g)": {"kcal": 22, "prot": 1.1, "gluc": 4.8, "lip": 0.2},
             "Champignon de Paris (1 moyen - 30 g)": {"kcal": 6, "prot": 0.8, "gluc": 0.6, "lip": 0.1},
+            "Boulettes Végétales (200g)": {"kcal": 454, "prot": 32.4, "gluc": 10.4, "lip": 14.4},
+            "Pates complètes (100g)": {"kcal": 349, "prot": 13, "gluc": 65, "lip": 2.2},
+            "Skyr Chocolat (100g)": {"kcal": 299, "prot": 9, "gluc": 3.8, "lip": 2.2},
 
 
 
@@ -207,7 +210,6 @@ with tab3:
 
     # Onglets pour circuits
     circuit_tab1, circuit_tab2, circuit_tab3, circuit_tab4, circuit_tab5 = st.tabs(["🟧 Trapèze, Épaules & Bras", "🟦 Dos", "🟩 Jambes & Fessiers","🟪 Pectoraux","🟩 Abdos"])
-    circuit_tab1, circuit_tab2, circuit_tab3, circuit_tab4 = st.tabs(["🟧 Trapèze, Épaules & Bras", "🟦 Dos", "🟩 Jambes & Fessiers","🟪 Pectoraux"])
 
     with circuit_tab1:
         st.markdown("### 🟧 Circuit 1 – Haut du corps : Trapèze / Épaules / Bras")
