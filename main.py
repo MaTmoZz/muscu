@@ -209,61 +209,101 @@ with tab3:
     st.subheader("🔥 Circuits ciblés")
 
     # Onglets pour circuits
-    circuit_tab1, circuit_tab2, circuit_tab3, circuit_tab4, circuit_tab5 = st.tabs(["🟧 Trapèze, Épaules & Bras", "🟦 Dos", "🟩 Jambes & Fessiers","🟪 Pectoraux","🟩 Abdos"])
+    circuit_tab1, circuit_tab2, circuit_tab3, circuit_tab4, circuit_tab5 = st.tabs(["🟧 Jour 1", "🟦 jour 2", "🟩 Jour 3","🟪 Jour 4","🟩 jour 5"])
 
     with circuit_tab1:
-        st.markdown("### 🟧 Circuit 1 – Haut du corps : Trapèze / Épaules / Bras")
+        st.markdown("### 🟧 Jour 1")
         st.write("**Objectif** : prise de masse, posture, force du haut du corps")
 
         # Développé militaire avec image
-        st.markdown("#### 🔸 Curl biceps assis à la machine — 4 × 10 — Biceps")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2022/01/curl-pupitre-machine-prechargee.gif",
-            caption="Curl biceps assis à la machine",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔸 Pec-deck ou butterfly — 4 × 8-10 — Pecs")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2000/06/pec-deck-butterfly-exercice-musculation.gif",
+                caption="Pec-deck ou butterfly",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="butterfly_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
-        st.markdown("#### 🔸 Curl biceps à la poulie basse — 3 × 12 — Biceps")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2021/10/curl-biceps-poulie-basse.gif",
-            caption="Curl biceps à la poulie basse",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
 
-        st.markdown("#### 🔸 Extension à la poulie haute — 4 × 10 — Triceps")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2022/04/extension-triceps-poulie-haute.gif",
-            caption="Extension à la poulie haute",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
+        # Développé militaire avec image
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔸 Développé incliné à la machine convergente — 3 × 12 — Pecs, triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2000/06/developpe-incline-machine-convergente-exercice-musculation.gif",
+                caption="Développé incliné à la machine convergente",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="dev_inclin_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
-        st.markdown("#### 🔸 Extensions verticales à deux mains avec haltère — 3 × 12 — Triceps")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2022/09/extensions-verticales-a-deux-mains-avec-haltere.gif",
-            caption="Extensions verticales à deux mains avec haltère",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
 
-        st.markdown("#### 🔸 Élévations latérales à la machine — 4 × 12 — Epaules")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2022/02/elevation-laterale-machine.gif",
-            caption="Élévations latérales à la machine",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
+        # Développé militaire avec image
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔸 Développé épaule haltères — 3 × 12 — Pecs, triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2022/02/developpe-epaule-halteres.gif",
+                caption="Développé épaule haltères",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="dev_epaule_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
-        st.markdown("#### 🔸 Développé épaules avec haltères — 4 × 10 — Epaules")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2022/02/developpe-epaule-halteres.gif",
-            caption="Développé épaules avec haltères",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
 
-        st.markdown("#### 🔸 Shrugs avec haltères — 3 × 40 — Trapèzes")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2022/11/shrugs-avec-halteres.gif",
-            caption="Shrugs avec haltères",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
+        # Développé militaire avec image
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔸 Elevation latérales — 3 × 12 — Pecs, triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2000/08/elevations-laterales-exercice-musculation.gif",
+                caption="Elevation latérales",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="elev_lat_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+        # Développé militaire avec image
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔸 Oiseau assis sur un banc — 3 × 12 — Pecs, triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2021/12/oiseau-assis-sur-banc.gif",
+                caption="Oiseau assis sur un banc",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="oiseau_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+        # Développé militaire avec image
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔸 Extension à la poulie haute — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2022/04/extension-triceps-poulie-haute.gif",
+                caption="Extension à la poulie haute",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="ext_p_haute_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+        # Développé militaire avec image
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔸 Dips — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2000/01/dips-triceps.gif",
+                caption="Dips",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="Dips_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
 
 
@@ -271,53 +311,70 @@ with tab3:
 
 
     with circuit_tab2:
-        st.markdown("### 🟦 Circuit 2 – Dos")
+        st.markdown("### 🟦 Jour 2")
         st.write("**Objectif** : prise de masse, posture, force du haut du corps")
 
-        # Développé militaire avec image
-        st.markdown("#### 🔹 Tirage vertical poitrine — 4 × 10 — Grand dorsaux")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2021/11/tirage-vertical-poitrine.gif",
-            caption="Tirage vertical poitrine",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
 
-        st.markdown("#### 🔹​ Tirage horizontal à la poulie — 4 × 12 — Épaisseur du dos")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2022/02/tirage-horizontal-poulie.gif",
-            caption="Tirage horizontal à la poulie",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
-
-        st.markdown("#### 🔹​ Rowing en pronation assis — 3 x 12 — Rhomboïdes, trapèzes")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2022/02/rowing-assis-machine-prise-pronation.gif",
-            caption="Rowing en pronation assis",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
-
-        st.markdown("#### 🔹​ Pullover avec haltère — 3 × 12 — Isolation des dorsaux")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2021/12/pullover-haltere.gif",
-            caption="Pullover avec haltère",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
-
-        st.markdown("#### 🔹​ Rowing unilatéral — 3 × 12 / bras — Dos")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2022/02/rowing-unilateral-landmine-meadows-row.gif",
-            caption="Rowing unilatéral",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
-
-        st.markdown("#### 🔹​ Extension lombaire à la machine — 4 × 15-20 — Lombaires")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2021/12/extension-lombaire-a-la-machine.gif",
-            caption="Extension lombaire à la machine",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Tirage horizontal à la poulie — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2022/02/tirage-horizontal-poulie.gif",
+                caption="Tirage horizontal à la poulie",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="tirage_p_bas_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
 
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Tirage vertical poitrine — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2021/11/tirage-vertical-poitrine.gif",
+                caption="Tirage vertical poitrine",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="tirage_p_haute_dos_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Shrugs — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2022/11/shrugs-avec-halteres.gif",
+                caption="Shrugs",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="Shrugs_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Curl biceps assis — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2022/01/curl-pupitre-machine-prechargee.gif",
+                caption="Curl biceps assis",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="curl_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Curl biceps à la poulie basse — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2021/10/curl-biceps-poulie-basse.gif",
+                caption="Curl biceps à la poulie basse",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="curl_p_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
 
 
@@ -325,45 +382,69 @@ with tab3:
 
 
     with circuit_tab3:
-        st.markdown("### 🟩 Circuit 3 – Jambes / Mollets / Fessiers")
+        st.markdown("### 🟩 Jour 3")
         st.write("**Objectif** : prise de masse, posture, force du haut du corps")
 
-        # Développé militaire avec image
-        st.markdown("#### 🔸 Presse à cuisses inclinée — 4 × 10-12 — Quadriceps")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2022/08/presse-a-cuisses-inclinee.gif",
-            caption="Presse à cuisses inclinée",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Presse à cuisses inclinée — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2022/08/presse-a-cuisses-inclinee.gif",
+                caption="Presse à cuisses inclinée",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="presse_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
-        st.markdown("#### 🔸 Squat — 4 × 12 — Quadriceps")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2021/11/homme-faisant-un-squat-avec-barre.gif",
-            caption="Squat",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
 
-        st.markdown("#### 🔸 Leg curl allongé — 4 × 12 — Quadriceps Ischios")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2021/10/leg-curl-allonge.gif",
-            caption="Leg curl allongé",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
 
-        st.markdown("#### 🔸 Leg extension — 3 × 15 — Quadriceps")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2000/06/leg-extension-exercice-musculation.gif",
-            caption="Leg extension",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Soulevé de terre — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2021/12/souleve-de-terre.gif",
+                caption="Soulevé de terre",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="souleve_de_terre_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
-        st.markdown("#### 🔸 Extension des mollets à la presse — 3 × 20 — Mollets")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2021/10/extension-mollets-presse-45.gif",
-            caption="Développé incliné à la machine convergente",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
 
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Leg curl — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2022/02/leg-curl-assis-machine.gif",
+                caption="Leg curl",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="leg_curl_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+    
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Leg extension — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2000/06/leg-extension-exercice-musculation.gif",
+                caption="Leg extension",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="leg_ext_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+        
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Extension des mollets à la presse — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2021/10/extension-mollets-presse-45.gif",
+                caption="Extension des mollets à la presse",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="mollet_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
 
 
@@ -372,84 +453,187 @@ with tab3:
 
 
     with circuit_tab4:
-        st.markdown("### 🟪​ Circuit 4 – Pectoraux")
+        st.markdown("### 🟪​ Jour 4")
         st.write("**Objectif** : prise de masse, posture, force du haut du corps")
 
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔸 Pec-deck ou butterfly — 4 × 8-10 — Pecs")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2000/06/pec-deck-butterfly-exercice-musculation.gif",
+                caption="Pec-deck ou butterfly",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="butterfly_2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
         # Développé militaire avec image
-        st.markdown("#### 🔸 Développé incliné — 4 × 10 — Pecs supérieurs")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2021/10/developpe-incline-barre.gif",
-            caption="Développé incliné",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔸 Développé incliné à la machine convergente — 3 × 12 — Pecs, triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2000/06/developpe-incline-machine-convergente-exercice-musculation.gif",
+                caption="Développé incliné à la machine convergente",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="dev_inclin_2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
-        st.markdown("#### 🔸 Développé décliné à la machine guidée — 3 × 12 — Pecs inférieurs")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2021/12/developpe-decline-barre.gif",
-            caption="Développé décliné à la machine guidée",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
 
-        st.markdown("#### 🔸 Développé couché — 4 × 8-10 — Pecs")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2019/08/developpe-couche.gif",
-            caption="Développé couché",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
 
-        st.markdown("#### 🔸 Écartés décliné avec haltères — 3 × 12 — Pecs")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2021/11/ecartes-decline-avec-halteres.gif",
-            caption="Écartés décliné avec haltères",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Tirage horizontal à la poulie — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2022/02/tirage-horizontal-poulie.gif",
+                caption="Tirage horizontal à la poulie",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="tirage_p_bas_2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
-        st.markdown("#### 🔸 Développé incliné à la machine convergente — 3 × 12 — Pecs, triceps")
-        st.image(
-            "https://www.docteur-fitness.com/wp-content/uploads/2000/06/developpe-incline-machine-convergente-exercice-musculation.gif",
-            caption="Développé incliné à la machine convergente",
-            width=300  # ✅ Ajuste ici (en pixels)
-        )
+
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Tirage vertical poitrine — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2021/11/tirage-vertical-poitrine.gif",
+                caption="Tirage vertical poitrine",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="tirage_p_haute_dos2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔸 Elevation latérales — 3 × 12 — Pecs, triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2000/08/elevations-laterales-exercice-musculation.gif",
+                caption="Elevation latérales",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="elev_lat_2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Curl biceps assis — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2022/01/curl-pupitre-machine-prechargee.gif",
+                caption="Curl biceps assis",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="curl_2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔹 Curl biceps à la poulie basse — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2021/10/curl-biceps-poulie-basse.gif",
+                caption="Curl biceps à la poulie basse",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="curl_p_2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🔸 Dips — 4 × 10 — Triceps")
+            st.image(
+                "https://www.docteur-fitness.com/wp-content/uploads/2000/01/dips-triceps.gif",
+                caption="Dips",
+                width=300  # ✅ Ajuste ici (en pixels)
+            )
+        with col2:
+            st.number_input("kg", key="Dips2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+
+
+
 
 
 with circuit_tab5:
-    st.markdown("### 🟩 Circuit – Ceinture abdominale / Abdos")
+    st.markdown("### 🟩 jour 5")
     st.write("**Objectif** : renforcer les abdominaux profonds, améliorer la posture et la stabilité")
 
-    st.markdown("#### 🔸 Crunch à la machine — 4 × 15 — Grand droit")
-    st.image(
-        "https://www.docteur-fitness.com/wp-content/uploads/2022/04/crunch-machine-abdos.gif",
-        caption="Crunch à la machine",
-        width=300
-    )
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.markdown("#### 🔹 Extension des mollets à la presse — 4 × 10 — Triceps")
+        st.image(
+            "https://www.docteur-fitness.com/wp-content/uploads/2021/10/extension-mollets-presse-45.gif",
+            caption="Extension des mollets à la presse",
+            width=300  # ✅ Ajuste ici (en pixels)
+         )
+    with col2:
+        st.number_input("kg", key="mollet2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
-    st.markdown("#### 🔸 Obliques haltère — 3 × 15 de chaque côté — Obliques externes")
-    st.image(
-        "https://www.docteur-fitness.com/wp-content/uploads/2022/07/flexions-laterales-haltere.gif",
-        caption="Torsion du buste à la poulie",
-        width=300
-    )
 
-    st.markdown("#### 🔸 Relevés de jambes sur banc incliné — 3 × 12 — Bas du grand droit")
-    st.image(
-        "https://www.docteur-fitness.com/wp-content/uploads/2022/04/releve-jambes-chaise-romaine-abdominaux.gif",
-        caption="Relevés de jambes sur banc incliné",
-        width=300
-    )
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.markdown("#### 🔹 Squat bulgare — 4 × 10 — Triceps")
+        st.image(
+            "https://www.docteur-fitness.com/wp-content/uploads/2000/06/squat-bulgare-halteres-exercice-musculation.gif",
+            caption="Squat bulgare",
+            width=300  # ✅ Ajuste ici (en pixels)
+         )
+    with col2:
+        st.number_input("kg", key="bulgare_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
-    st.markdown("#### 🔸 AB Coaster — 3 × 10 — Transverse")
-    st.image(
-        "https://www.docteur-fitness.com/wp-content/uploads/2022/04/ab-coaster-abdominaux.gif",
-        caption="AB Coaster",
-        width=300
-    )
 
-    st.markdown("#### 🔸 Flexions des obliques au banc à lombaire à 45° — 3 × 12 — Transverse / stabilisateurs")
-    st.image(
-        "https://www.docteur-fitness.com/wp-content/uploads/2000/07/flexions-des-obliques-banc-lombaire-45-exercice-musculation.gif",
-        caption="Flexions des obliques au banc à lombaire à 45°",
-        width=300
-    )
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.markdown("#### 🔹 Hip thrust — 4 × 10 — Triceps")
+        st.image(
+            "https://www.docteur-fitness.com/wp-content/uploads/2022/08/hip-thrust-a-la-smith-machine.gif",
+            caption="Hip thrust",
+            width=300  # ✅ Ajuste ici (en pixels)
+         )
+    with col2:
+        st.number_input("kg", key="hip_thrust_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.markdown("#### 🔹 Presse à cuisses inclinée — 4 × 10 — Triceps")
+        st.image(
+            "https://www.docteur-fitness.com/wp-content/uploads/2022/08/presse-a-cuisses-inclinee.gif",
+            caption="Presse à cuisses inclinée",
+            width=300  # ✅ Ajuste ici (en pixels)
+        )
+    with col2:
+        st.number_input("kg", key="presse2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.markdown("#### 🔹 Leg curl — 4 × 10 — Triceps")
+        st.image(
+            "https://www.docteur-fitness.com/wp-content/uploads/2022/02/leg-curl-assis-machine.gif",
+            caption="Leg curl",
+            width=300  # ✅ Ajuste ici (en pixels)
+        )
+    with col2:
+        st.number_input("kg", key="leg_curl2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
+
+    
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.markdown("#### 🔹 Leg extension — 4 × 10 — Triceps")
+        st.image(
+            "https://www.docteur-fitness.com/wp-content/uploads/2000/06/leg-extension-exercice-musculation.gif",
+            caption="Leg extension",
+            width=300  # ✅ Ajuste ici (en pixels)
+        )
+    with col2:
+        st.number_input("kg", key="leg_ext2_kg", min_value=0, step=1)  # ✅ Streamlit gère la valeur
 
 
 
