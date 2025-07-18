@@ -58,9 +58,7 @@ with tab2:
             "Boulettes Végétales (200g)": {"kcal": 454, "prot": 32.4, "gluc": 10.4, "lip": 14.4},
             "Pates complètes (100g)": {"kcal": 349, "prot": 13, "gluc": 65, "lip": 2.2},
             "Skyr Chocolat (100g)": {"kcal": 299, "prot": 9, "gluc": 3.8, "lip": 2.2},
-
-
-
+            "Burrito triangle (petit dej)": {"kcal": 864, "prot": 31.2, "gluc": 54, "lip": 25.6},
         }
 
         # Initialisation de l'état
@@ -218,7 +216,7 @@ with tab3:
         # Développé militaire avec image
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔸 Pec-deck ou butterfly — 4 × 8-10 — Pecs")
+            st.markdown("#### 🔸 Pec-deck ou butterfly — 4 × 12 — Pecs")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2000/06/pec-deck-butterfly-exercice-musculation.gif",
                 caption="Pec-deck ou butterfly",
@@ -231,7 +229,7 @@ with tab3:
         # Développé militaire avec image
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔸 Développé incliné à la machine convergente — 3 × 12 — Pecs, triceps")
+            st.markdown("#### 🔸 Développé incliné à la machine convergente — 4 × 12 — Pecs, triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2000/06/developpe-incline-machine-convergente-exercice-musculation.gif",
                 caption="Développé incliné à la machine convergente",
@@ -244,7 +242,7 @@ with tab3:
         # Développé militaire avec image
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔸 Développé épaule haltères — 3 × 12 — Pecs, triceps")
+            st.markdown("#### 🔸 Développé épaule haltères — 4 × 12 — Pecs, triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2022/02/developpe-epaule-halteres.gif",
                 caption="Développé épaule haltères",
@@ -257,7 +255,7 @@ with tab3:
         # Développé militaire avec image
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔸 Elevation latérales — 3 × 12 — Pecs, triceps")
+            st.markdown("#### 🔸 Elevation latérales — 4 × 12 — Pecs, triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2000/08/elevations-laterales-exercice-musculation.gif",
                 caption="Elevation latérales",
@@ -270,7 +268,7 @@ with tab3:
         # Développé militaire avec image
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔸 Oiseau assis sur un banc — 3 × 12 — Pecs, triceps")
+            st.markdown("#### 🔸 Oiseau assis sur un banc — 4 × 12 — Pecs, triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2021/12/oiseau-assis-sur-banc.gif",
                 caption="Oiseau assis sur un banc",
@@ -283,7 +281,7 @@ with tab3:
         # Développé militaire avec image
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔸 Extension à la poulie haute — 4 × 10 — Triceps")
+            st.markdown("#### 🔸 Extension à la poulie haute — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2022/04/extension-triceps-poulie-haute.gif",
                 caption="Extension à la poulie haute",
@@ -317,7 +315,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Tirage horizontal à la poulie — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Tirage horizontal à la poulie — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2022/02/tirage-horizontal-poulie.gif",
                 caption="Tirage horizontal à la poulie",
@@ -330,7 +328,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Tirage vertical poitrine — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Tirage vertical poitrine — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2021/11/tirage-vertical-poitrine.gif",
                 caption="Tirage vertical poitrine",
@@ -342,7 +340,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Shrugs — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Shrugs — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2022/11/shrugs-avec-halteres.gif",
                 caption="Shrugs",
@@ -354,7 +352,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Curl biceps assis — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Curl biceps assis — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2022/01/curl-pupitre-machine-prechargee.gif",
                 caption="Curl biceps assis",
@@ -367,7 +365,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Curl biceps à la poulie basse — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Curl biceps à la poulie basse — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2021/10/curl-biceps-poulie-basse.gif",
                 caption="Curl biceps à la poulie basse",
@@ -387,7 +385,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Presse à cuisses inclinée — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Presse à cuisses inclinée — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2022/08/presse-a-cuisses-inclinee.gif",
                 caption="Presse à cuisses inclinée",
@@ -400,7 +398,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Soulevé de terre — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Soulevé de terre — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2021/12/souleve-de-terre.gif",
                 caption="Soulevé de terre",
@@ -412,7 +410,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Leg curl — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Leg curl — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2022/02/leg-curl-assis-machine.gif",
                 caption="Leg curl",
@@ -424,7 +422,7 @@ with tab3:
     
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Leg extension — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Leg extension — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2000/06/leg-extension-exercice-musculation.gif",
                 caption="Leg extension",
@@ -437,7 +435,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Extension des mollets à la presse — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Extension des mollets à la presse — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2021/10/extension-mollets-presse-45.gif",
                 caption="Extension des mollets à la presse",
@@ -458,7 +456,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔸 Pec-deck ou butterfly — 4 × 8-10 — Pecs")
+            st.markdown("#### 🔸 Pec-deck ou butterfly — 4 × 12 — Pecs")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2000/06/pec-deck-butterfly-exercice-musculation.gif",
                 caption="Pec-deck ou butterfly",
@@ -471,7 +469,7 @@ with tab3:
         # Développé militaire avec image
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔸 Développé incliné à la machine convergente — 3 × 12 — Pecs, triceps")
+            st.markdown("#### 🔸 Développé incliné à la machine convergente — 4 × 12 — Pecs, triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2000/06/developpe-incline-machine-convergente-exercice-musculation.gif",
                 caption="Développé incliné à la machine convergente",
@@ -484,7 +482,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Tirage horizontal à la poulie — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Tirage horizontal à la poulie — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2022/02/tirage-horizontal-poulie.gif",
                 caption="Tirage horizontal à la poulie",
@@ -497,7 +495,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Tirage vertical poitrine — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Tirage vertical poitrine — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2021/11/tirage-vertical-poitrine.gif",
                 caption="Tirage vertical poitrine",
@@ -509,7 +507,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔸 Elevation latérales — 3 × 12 — Pecs, triceps")
+            st.markdown("#### 🔸 Elevation latérales — 4 × 12 — Pecs, triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2000/08/elevations-laterales-exercice-musculation.gif",
                 caption="Elevation latérales",
@@ -521,7 +519,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Curl biceps assis — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Curl biceps assis — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2022/01/curl-pupitre-machine-prechargee.gif",
                 caption="Curl biceps assis",
@@ -534,7 +532,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔹 Curl biceps à la poulie basse — 4 × 10 — Triceps")
+            st.markdown("#### 🔹 Curl biceps à la poulie basse — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2021/10/curl-biceps-poulie-basse.gif",
                 caption="Curl biceps à la poulie basse",
@@ -546,7 +544,7 @@ with tab3:
 
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🔸 Dips — 4 × 10 — Triceps")
+            st.markdown("#### 🔸 Dips — 4 × 12 — Triceps")
             st.image(
                 "https://www.docteur-fitness.com/wp-content/uploads/2000/01/dips-triceps.gif",
                 caption="Dips",
@@ -567,7 +565,7 @@ with circuit_tab5:
 
     col1, col2 = st.columns([3, 1])
     with col1:
-        st.markdown("#### 🔹 Extension des mollets à la presse — 4 × 10 — Triceps")
+        st.markdown("#### 🔹 Extension des mollets à la presse — 4 × 12 — Triceps")
         st.image(
             "https://www.docteur-fitness.com/wp-content/uploads/2021/10/extension-mollets-presse-45.gif",
             caption="Extension des mollets à la presse",
@@ -579,7 +577,7 @@ with circuit_tab5:
 
     col1, col2 = st.columns([3, 1])
     with col1:
-        st.markdown("#### 🔹 Squat bulgare — 4 × 10 — Triceps")
+        st.markdown("#### 🔹 Squat bulgare — 4 × 12 — Triceps")
         st.image(
             "https://www.docteur-fitness.com/wp-content/uploads/2000/06/squat-bulgare-halteres-exercice-musculation.gif",
             caption="Squat bulgare",
@@ -591,7 +589,7 @@ with circuit_tab5:
 
     col1, col2 = st.columns([3, 1])
     with col1:
-        st.markdown("#### 🔹 Hip thrust — 4 × 10 — Triceps")
+        st.markdown("#### 🔹 Hip thrust — 4 × 12 — Triceps")
         st.image(
             "https://www.docteur-fitness.com/wp-content/uploads/2022/08/hip-thrust-a-la-smith-machine.gif",
             caption="Hip thrust",
@@ -603,7 +601,7 @@ with circuit_tab5:
 
     col1, col2 = st.columns([3, 1])
     with col1:
-        st.markdown("#### 🔹 Presse à cuisses inclinée — 4 × 10 — Triceps")
+        st.markdown("#### 🔹 Presse à cuisses inclinée — 4 × 12 — Triceps")
         st.image(
             "https://www.docteur-fitness.com/wp-content/uploads/2022/08/presse-a-cuisses-inclinee.gif",
             caption="Presse à cuisses inclinée",
@@ -614,7 +612,7 @@ with circuit_tab5:
 
     col1, col2 = st.columns([3, 1])
     with col1:
-        st.markdown("#### 🔹 Leg curl — 4 × 10 — Triceps")
+        st.markdown("#### 🔹 Leg curl — 4 × 12 — Triceps")
         st.image(
             "https://www.docteur-fitness.com/wp-content/uploads/2022/02/leg-curl-assis-machine.gif",
             caption="Leg curl",
@@ -626,7 +624,7 @@ with circuit_tab5:
     
     col1, col2 = st.columns([3, 1])
     with col1:
-        st.markdown("#### 🔹 Leg extension — 4 × 10 — Triceps")
+        st.markdown("#### 🔹 Leg extension — 4 × 12 — Triceps")
         st.image(
             "https://www.docteur-fitness.com/wp-content/uploads/2000/06/leg-extension-exercice-musculation.gif",
             caption="Leg extension",
