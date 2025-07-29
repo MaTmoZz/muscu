@@ -41,7 +41,7 @@ with tab2:
 
         # Base d'aliments (1 portion)
         foods = {
-            "Œuf (100g)":            {"kcal": 143,  "prot": 13,  "gluc": 1.1, "lip": 10},
+            "Œuf entier (1 pièce ~60g)": {"kcal": 90, "prot": 7.2, "gluc": 0.4, "lip": 6.6},
             "Whey (1 scoop 30 g)":      {"kcal": 114.6, "prot": 23.4, "gluc": 2.69,   "lip": 1.11},
             "Gainer (1 scoop 50 g)":      {"kcal": 192.5, "prot": 12.5, "gluc": 33.5,   "lip": 0.75},
             "Avocat (1/2)":      {"kcal": 120, "prot": 1.5, "gluc": 6,   "lip": 11},
@@ -59,6 +59,18 @@ with tab2:
             "Pates complètes (100g)": {"kcal": 349, "prot": 13, "gluc": 65, "lip": 2.2},
             "Skyr Chocolat (100g)": {"kcal": 299, "prot": 9, "gluc": 3.8, "lip": 2.2},
             "Burrito triangle (petit dej)": {"kcal": 864, "prot": 31.2, "gluc": 54, "lip": 25.6},
+            "Pois chiches cuits (100 g)": {"kcal": 164, "prot": 8.9, "gluc": 27.4, "lip": 2.6},
+            "Steaks vege (172.5 g)": {"kcal": 330, "prot": 36.2, "gluc": 7, "lip": 15},
+            "Demae Ramen Spicy (100 g préparé)": {"kcal": 452, "prot": 8.3, "gluc": 56.0, "lip": 20.0},
+            "Salade Sodebo Manhattan (320 g)": {
+    "kcal": 595,
+    "prot": 27,
+    "gluc": 54,
+    "lip": 28
+}
+
+
+
         }
 
         # Initialisation de l'état
@@ -725,6 +737,18 @@ with tab5:  # 🎵 Musique
     with col3:
         st.image("musique/last.jpg", caption="The Last Stand", use_container_width=True)
         st.audio("musique/The Last Stand.mp3")
+
+    with col1:
+        st.image("musique/cheat.jpg", caption="Cheat on me", use_container_width=True)
+        st.audio("musique/cheat.mp3")
+
+    with col2:
+        st.image("musique/arcane.jpg", caption="Arcane", use_container_width=True)
+        st.audio("musique/arcane.mp3")
+
+    with col3:
+        st.image("musique/enemy.jpg", caption="Enemy", use_container_width=True)
+        st.audio("musique/enemy.mp3")
 
 
     st.markdown("#### ➕ Ajouter une musique")
