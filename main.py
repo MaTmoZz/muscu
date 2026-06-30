@@ -37,7 +37,7 @@ with tab2:
         st.subheader("📅 Suivi journalier – Ajoute tes aliments")
 
         # Objectifs quotidiens (à adapter)
-        targets = {"kcal": 3100, "prot": 150, "gluc": 380, "lip": 85}
+        targets = {"kcal": 2850, "prot": 180, "gluc": 310, "lip": 75}
 
         # Base d'aliments (1 portion)
         foods = {
