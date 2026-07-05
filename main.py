@@ -54,6 +54,7 @@ with tab2:
             "Tomate (1 moyenne - 120 g)": {"kcal": 22, "prot": 1.1, "gluc": 4.8, "lip": 0.2},
             "Boulettes Végétales (200g)": {"kcal": 454, "prot": 32.4, "gluc": 10.4, "lip": 14.4},
             "Skyr vanille (100g)": {"kcal": 55, "prot": 9.7, "gluc": 3.6, "lip": 0.2},
+            "avoine (60g)": {"kcal": 218, "prot": 6.6, "gluc": 35, "lip": 4.3},
 
 
         }
