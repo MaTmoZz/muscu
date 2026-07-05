@@ -41,7 +41,7 @@ with tab2:
 
         # Base d'aliments (1 portion)
         foods = {
-            "Sandwich Protéiné": {"kcal": 501, "prot": 26.92, "gluc": 55.2, "lip": 18.04},
+            "Tartine Protéiné": {"kcal": 501, "prot": 22.46, "gluc": 28.8, "lip": 16.22},
             "Œuf entier (1 pièce ~60g)": {"kcal": 90, "prot": 7.2, "gluc": 0.4, "lip": 6.6},
             "Whey (1 scoop 30 g)":      {"kcal": 104, "prot": 23, "gluc": 1.4,   "lip": 0.5},
             "Gainer (1 scoop 50 g)":      {"kcal": 192.5, "prot": 12.5, "gluc": 33.5,   "lip": 0.75},
