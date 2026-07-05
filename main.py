@@ -46,30 +46,14 @@ with tab2:
             "Whey (1 scoop 30 g)":      {"kcal": 104, "prot": 23, "gluc": 1.4,   "lip": 0.5},
             "Gainer (1 scoop 50 g)":      {"kcal": 192.5, "prot": 12.5, "gluc": 33.5,   "lip": 0.75},
             "Avocat (1/2)":      {"kcal": 120, "prot": 1.5, "gluc": 6,   "lip": 11},
-            "Bouché vegetal (175g)":      {"kcal": 408, "prot": 40, "gluc": 5.6,   "lip": 21.7},
             "Emincé vegetal (175g)":      {"kcal": 237, "prot": 31, "gluc": 2.1,   "lip": 9.75},
             "Riz (50g)":      {"kcal": 55, "prot": 1.16, "gluc": 36,   "lip": 0.5},
             "Galette (burrito) 100g":      {"kcal": 594, "prot": 7.8, "gluc": 50,   "lip": 6.5},
             "Patate 50g":      {"kcal": 38, "prot": 0.9, "gluc": 8.5,   "lip": 0.05},
             "Oignon (100 g)": {"kcal": 40, "prot": 1.1, "gluc": 9, "lip": 0.1},
-            "Salers (50 g)": {"kcal": 200, "prot": 12, "gluc": 0.5, "lip": 17},
-            "Pain blanc (50 g)": {"kcal": 135, "prot": 4, "gluc": 27, "lip": 0.7},
             "Tomate (1 moyenne - 120 g)": {"kcal": 22, "prot": 1.1, "gluc": 4.8, "lip": 0.2},
-            "Champignon de Paris (1 moyen - 30 g)": {"kcal": 6, "prot": 0.8, "gluc": 0.6, "lip": 0.1},
             "Boulettes Végétales (200g)": {"kcal": 454, "prot": 32.4, "gluc": 10.4, "lip": 14.4},
-            "Pates complètes (100g)": {"kcal": 349, "prot": 13, "gluc": 65, "lip": 2.2},
-            "Skyr Chocolat (100g)": {"kcal": 299, "prot": 9, "gluc": 3.8, "lip": 2.2},
-            "Burrito triangle (petit dej)": {"kcal": 864, "prot": 31.2, "gluc": 54, "lip": 25.6},
-            "Pois chiches cuits (100 g)": {"kcal": 164, "prot": 8.9, "gluc": 27.4, "lip": 2.6},
-            "Steaks vege (172.5 g)": {"kcal": 330, "prot": 36.2, "gluc": 7, "lip": 15},
-            "Demae Ramen Spicy (100 g préparé)": {"kcal": 452, "prot": 8.3, "gluc": 56.0, "lip": 20.0},
-            "Salade Sodebo Manhattan (320 g)": {
-    "kcal": 595,
-    "prot": 27,
-    "gluc": 54,
-    "lip": 28
-}
-
+            "Skyr vanille (100g)": {"kcal": 55, "prot": 9.7, "gluc": 3.6, "lip": 0.2},
 
 
         }
