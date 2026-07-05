@@ -48,7 +48,7 @@ with tab2:
             "Avocat (1/2)":      {"kcal": 120, "prot": 1.5, "gluc": 6,   "lip": 11},
             "Emincé vegetal (175g)":      {"kcal": 237, "prot": 31, "gluc": 2.1,   "lip": 9.75},
             "Riz (50g)":      {"kcal": 55, "prot": 1.16, "gluc": 36,   "lip": 0.5},
-            "Galette (burrito) 100g":      {"kcal": 594, "prot": 7.8, "gluc": 50,   "lip": 6.5},
+            "Galette (burrito) 100g":      {"kcal": 297, "prot": 7.8, "gluc": 50,   "lip": 6.5},
             "Patate 50g":      {"kcal": 38, "prot": 0.9, "gluc": 8.5,   "lip": 0.05},
             "Oignon (100 g)": {"kcal": 40, "prot": 1.1, "gluc": 9, "lip": 0.1},
             "Tomate (1 moyenne - 120 g)": {"kcal": 22, "prot": 1.1, "gluc": 4.8, "lip": 0.2},
